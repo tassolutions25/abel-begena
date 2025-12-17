@@ -57,18 +57,20 @@ const Home = ({ lang }) => {
             to="/about"
             className="group inline-flex items-center gap-4 text-white font-semibold"
           >
-            <span className="uppercase tracking-widest text-sm hover:text-amber-400 transition-colors">
+            <span className="uppercase tracking-widest text-xs hover:text-amber-400 transition-colors">
               {lang === "am" ? "ተጨማሪ ይመልከቱ" : "Learn More"}
             </span>
-            <span className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center group-hover:bg-amber-500 group-hover:border-amber-500 transition-all duration-500">
+            <span className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center group-hover:bg-amber-500 group-hover:border-amber-500 transition-all duration-500">
               <ArrowRight
-                size={18}
+                size={16}
                 className="transform group-hover:translate-x-1 transition-transform"
               />
             </span>
           </Link>
         </SplitSection>
       </section>
+
+
 
       <section className="py-24 md:py-32 px-6 md:px-20 bg-[#111111]">
         <div className="max-w-7xl mx-auto">
@@ -81,7 +83,7 @@ const Home = ({ lang }) => {
               <span className="text-amber-500 font-bold text-xs tracking-[0.3em] uppercase block mb-4">
                 {lang === "am" ? "የምንሰጣቸው ትምህርቶች" : "What We Teach"}
               </span>
-              <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-white leading-tight mb-6">
                 {lang === "am" ? "የሙዚቃ ክህሎቶች" : "Musical Skills"}
               </h2>
               <p className="text-gray-400 text-lg mb-10">
@@ -124,7 +126,7 @@ const Home = ({ lang }) => {
             <span className="text-amber-500 font-bold text-xs tracking-[0.3em] uppercase block mb-4">
               {t.whyUs.title}
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white">
               {lang === "am" ? "ልዩ ባህሪያት" : "Our Features"}
             </h2>
           </motion.div>
@@ -172,7 +174,7 @@ const Home = ({ lang }) => {
               <span className="text-amber-500 font-bold text-xs tracking-[0.3em] uppercase block mb-4">
                 {t.gallery.subtitle}
               </span>
-              <h2 className="text-4xl md:text-5xl font-bold text-white">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-white">
                 {t.gallery.title}
               </h2>
             </div>
@@ -203,7 +205,7 @@ const Home = ({ lang }) => {
             <span className="text-amber-500 font-bold text-xs tracking-[0.3em] uppercase block mb-4">
               {t.courses.subtitle}
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white">
               {t.courses.title}
             </h2>
           </motion.div>
@@ -233,7 +235,7 @@ const Home = ({ lang }) => {
             <span className="text-amber-500 font-bold text-xs tracking-[0.3em] uppercase block mb-4">
               {lang === "am" ? "ምስክርነት" : "Testimonials"}
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white">
               {lang === "am" ? "ተማሪዎቻችን ምን ይላሉ?" : "What Our Students Say"}
             </h2>
           </motion.div>
@@ -258,7 +260,7 @@ const Home = ({ lang }) => {
             <span className="text-amber-500 font-bold text-xs tracking-[0.3em] uppercase block mb-4">
               {t.locations.subtitle}
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white">
               {t.locations.title}
             </h2>
           </motion.div>
@@ -279,7 +281,7 @@ const Home = ({ lang }) => {
                   </span>
                   <div className="flex items-center gap-4">
                     <MapPin className="text-amber-500" size={24} />
-                    <h3 className="text-3xl md:text-5xl font-bold text-gray-300 group-hover:text-white transition-colors">
+                    <h3 className="text-2xl md:text-4xl font-bold text-gray-300 group-hover:text-white transition-colors">
                       {loc.city}
                     </h3>
                   </div>
@@ -312,7 +314,7 @@ const Home = ({ lang }) => {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-amber-600/90 to-amber-800/90" />
           <div className="relative z-10 py-16 md:py-24 px-8 md:px-16 text-center">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">
               {lang === "am" ? "አሁኑኑ ይመዝገቡ!" : "Enroll Today!"}
             </h2>
             <p className="text-white/80 text-lg mb-10 max-w-2xl mx-auto">

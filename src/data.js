@@ -41,6 +41,28 @@ export const content = {
         { value: "10", label: "ዓመታት" },
       ],
     },
+    aboutBegena: {
+      title: "ስለ በገና",
+      sections: [
+        {
+          heading: "ትርጉም",
+          content: ` "በገና" - የበገና ቀጥተኛ ትርጉሙ መዝሙር ሲሆን ሚስጢራዊ ትርጉሙ ደግሞ 'ስነ-ምግባር' ማለት ነዉ። በገና የኢትዮጵያ ቤ/ክርስቲያን የምስጋና መሳሪያ እና ጥንታዊ የሀገር ሀብት ነው። "በገና" የሚለው ስም "በገነ" ከሚለው ግሥ የተገኘ ሲሆን ትርጉሙም ነዘረ፣ መታ፣ ደረደረ ማለት ነው። እንዲሁም "በገና" ማለት በቁሙ መዝሙር ማለት ነው።`,
+        },
+        {
+          heading: "ታሪካዊ ለመጣጥ",
+          content: `በገና ለመጀመሪያ ጊዜ የደረደሩት የላሜህ ልጅ የዩባል (ኢዮቤል) ልጆች ነበሩ (ዘፍ.4፡19-24)። ይህንንም መሳሪያ የሠሩት አያታቸው ላሜህ በስህተት ልጁን ቱባልቃይንን እና ቅድመ አያቱን ቃየንን በመግደሉ ምክንያት በተፈጠረው ጥልቅ ሐዘን ነበር። ስለዚህ በገና ከመነሻው የሐዘን፣ የንስሐ፣ የልመናና የምስጋና መሣሪያ ነው። ወደ ኢትዮጵያ የገባው ከክርስቶስ ልደት በፊት በቀደምት የኢትዮጵያ ነገስታት በኩል ሲሆን፣ ታላቁ ቅዱስ ያሬድም ለቤተክርስቲያን አገልግሎት በስፋት ተጠቅሞበታል።`,
+        },
+        {
+          heading: "ምሳሌያዊ ትምህርቶች",
+          content: `የበገና አሥሩ አውታር የዓሠርቱ ቃላት (ትእዛዛት) ምሳሌ ናቸው።
+          - ላይኛው ምስሶ፡ የፈቃደ እግዚአብሔር
+          - ታችኛው ብራ፡ የማኅፀነ ድንግል
+          - ግራና ቀኙ፡ የሚካኤልና የገብርኤል (ወይም የብሉይና የሐዲስ) ምሳሌ ናቸው።
+          
+          አውታሩ በእጅ ሲመታ ድምፁ ከታችኛው (ከቆዳው) ዘንድ እንደሚሰማ፣ መለኮትና ሥጋ ተዋሕደው ከማኅፀነ ድንግል ዘንድ ለማደራቸው ምሳሌ ነው።`,
+        },
+      ],
+    },
     skills: [
       { name: "በገና", percentage: 95, description: "የመንፈሳዊ ዜማ መሳሪያ" },
       { name: "ክራር", percentage: 90, description: "የባህል ዜማ መሳሪያ" },
@@ -248,6 +270,28 @@ export const content = {
         { value: "5000", label: "Graduates" },
         { value: "4", label: "Branches" },
         { value: "10", label: "Years" },
+      ],
+    },
+    aboutBegena: {
+      title: "About Begena",
+      sections: [
+        {
+          heading: "Meaning",
+          content: `The direct meaning of "Begena" is "Hymn" or "Song," while its mystical meaning refers to "Ethics" or "Good Conduct." It is a unique ancient instrument of the Ethiopian Orthodox Tewahedo Church. Deriving from the verb "Begene" (meaning to vibrate, strike, or pluck), it primarily serves as an instrument of prayer and praise.`,
+        },
+        {
+          heading: "Historical Origin",
+          content: `According to biblical tradition, the Begena was first plucked by the children of Jubal (Genesis 4:19-24). It was created as an instrument of sorrow and repentance after Lamech accidentally killed his ancestor Cain and his son Tubal-Cain. Thus, from its inception, the Begena has been an instrument for repentance, supplication, and praise. It was brought to Ethiopia by ancient kings before the birth of Christ and was later integrated into the church's divine liturgy by Saint Yared.`,
+        },
+        {
+          heading: "Symbolism",
+          content: `The Begena's 10 strings represent the Ten Commandments.
+          - The Upper Beam (Qember): Represents the Will of God.
+          - The Lower Soundbox (Gebete): Represents the Womb of the Virgin Mary.
+          - The Left and Right Pillars: Represent Archangels Michael and Gabriel (or the Old and New Testaments).
+          
+          When the strings are plucked, the sound resonates from the bottom, symbolizing the mystery of Incarnation—Divinity and Humanity uniting in the Virgin's womb.`,
+        },
       ],
     },
     skills: [
