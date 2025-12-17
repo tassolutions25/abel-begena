@@ -1,157 +1,446 @@
-// src/data.js
 export const content = {
   am: {
     nav: {
       home: "መነሻ",
       about: "ስለ በገና",
+      gallery: "ማዕከለ ስእላት",
       courses: "ትምህርቶች",
       location: "አድራሻ",
       contact: "ያግኙን",
     },
     hero: {
-      tagline: "የኢትዮጵያ ኦርቶዶክስ ተዋህዶ",
-      title: "አቤል የበገና ትምህርት ቤት",
-      desc: "የያሬዳዊ ዜማ እና የባህል ሙዚቃ መሳሪያዎች መማሪያ። ጥበብን ከነወዙ እንሰጣለን።",
-      cta: "ይመዝገቡ",
+      slides: [
+        {
+          image: "/images/abel23.jpg",
+          tagline: "የኢትዮጵያ ኦርቶዶክስ ተዋህዶ",
+          title: "አቤል የበገና ትምህርት ቤት",
+          description: "የያሬዳዊ ዜማ እና የባህል ሙዚቃ መሳሪያዎች መማሪያ። ጥበብን ከነወዙ እንሰጣለን።",
+        },
+        {
+          image: "/images/abel34.jpg",
+          tagline: "የመንፈሳዊ ዜማ ትምህርት",
+          title: "በገና ይማሩ ከእኛ ጋር",
+          description: "የጥንታዊ የኢትዮጵያ ሙዚቃ ትምህርት ቤት ወደ አዲስ ትውልድ እናስተላልፋለን።",
+        },
+        {
+          image: "/images/abel44.jpg",
+          tagline: "ሺዎችን አስመርቀናል",
+          title: "የአባቶቻችንን ስርዓት እንጠብቃለን",
+          description: "ከሺዎች በላይ ተማሪዎችን በበገና፣ በክራር፣ በመሰንቆ እና በዋሽንት አሰልጥነናል።",
+        },
+      ],
     },
-    aboutPage: {
-      title: "ስለ በገና",
-      subtitle: "ታሪክና ትርጓሜ",
-      tabs: ["ትርጓሜ", "ታሪክ", "ምሳሌነት"],
-      content: {
-        0: {
-          head: "ትርጓሜና ምንነት",
-          body: "«በገና» የበገና ቀጥተኛ ትርጉሙ መዝሙር ሲሆን ሚስጢራዊ ትርጉሙ ደግሞ ስነ-ምግባር ማለት ነዉ። እንደሌሎች የሃገራችን ጥልቅ ብሔራዊ የታሪክ ሃብቶችና በታሪክም ከእስራኤል ቀጥሎ የኢትዮጵያ ቤተ ክርስቲያን ብቸኛ ጥንታዊ የዜማ መሣርያ ነው። በገና ማለት «በገነ» ከሚለው ግስ የተገኘ ሲሆን ትርጉሙም ደረደረ፣ መታ፣ ወይም አነዘረ ማለት ነው።",
-          quote: "«ለእግዚኣብሔር በገና ደርድሩለት» (መዝ. 48፡5)",
+    about: {
+      subtitle: "ስለ እኛ",
+      title: "ጥንታዊ ጥበብ ዘመናዊ ትምህርት",
+      description:
+        "አቤል የበገና ትምህርት ቤት በ2010 ዓ.ም ተመስርቶ እስከ ዛሬ ድረስ ከ5000 በላይ ተማሪዎችን በማስመረቅ የባህል ሙዚቃ ትምህርትን በአዲስ መልኩ እያስተማረ ይገኛል። የእኛ አላማ ባህላዊ እና መንፈሳዊ ሙዚቃን ለአዲሱ ትውልድ ማስተላለፍ ነው።",
+      stats: [
+        { value: "5000", label: "ምሩቃን" },
+        { value: "4", label: "ቅርንጫፎች" },
+        { value: "10", label: "ዓመታት" },
+      ],
+    },
+    skills: [
+      { name: "በገና", percentage: 95, description: "የመንፈሳዊ ዜማ መሳሪያ" },
+      { name: "ክራር", percentage: 90, description: "የባህል ዜማ መሳሪያ" },
+      { name: "መሰንቆ", percentage: 85, description: "የወግ ዜማ መሳሪያ" },
+      { name: "ዋሽንት", percentage: 80, description: "የእረኝነት ዜማ መሳሪያ" },
+    ],
+    whyUs: {
+      title: "ለምን እኛን ይምረጡ?",
+      items: [
+        {
+          icon: "award",
+          title: "ልምድ ያለን መምህራን",
+          desc: "ከ20 ዓመት በላይ ልምድ ያላቸው ባለሙያዎች",
         },
-        1: {
-          head: "ታሪካዊ አመጣጥ",
-          body: "በገና በመጽሐፍ ቅዱስ ለመጀመሪያ ጊዜ የተጠቀሰ የዜማ መሳሪያ ነው። የላሜህ ልጅ ዩባል (ኢዮቤል) አባቱ ላሜህ በድንገት ቅድመ አያቱን ቃየንን በድንጋይ ወርውሮ ከገደለ በኋላ፣ በፈጠረው ጸጸትና ሀዘን ምክንያት በገናን ከደረቅ እንጨትና ጅማት ሰርቶ ሀዘኑን ገለጸበት። ወደ ኢትዮጵያ የገባው ከክርስቶስ ልደት በፊት በቀደምት ነገስታት ወይም ከታቦተ ጽዮን ጋር በቀዳማዊ ምኒሊክ ጊዜ እንደሆነ ይታመናል።",
-          quote: "በገና የንስሐ፣ የልመናና የምስጋና መሳሪያ ነው።",
+        {
+          icon: "users",
+          title: "የቡድን ትምህርት",
+          desc: "በቡድን እና በግል ትምህርት እናስተምራለን",
         },
-        2: {
-          head: "ምሳሌነትና ትርጉም",
-          body: "በገና አሥር አውታር ያሉት ሲሆን እያንዳንዱ ክፍል የራሱ መንፈሳዊ ትርጉም አለው። አውታሩ በእጅ ሲመታ ሁለቱም ተዋሕደው ድምፁ የሚሰማው ከታችኛው (ከቆዳው) ዘንድ እንደ ሆነ ሁሉ መለኮትና ሥጋ ተዋሕደው ከማኅፀነ ድንግል ዘንድ ለማደራቸው ምሳሌ ነው።",
-          list: [
-            { k: "ላይኛው ተሸካሚ", v: "የፈቃደ እግዚአብሔር ምሳሌ" },
-            { k: "ታችኛው ሳጥን", v: "የማኅፀነ ድንግል ምሳሌ" },
-            { k: "ግራና ቀኝ ምሰሶዎች", v: "የሚካኤልና የገብርኤል ምሳሌ" },
-            { k: "አሥሩ አውታሮች", v: "የዓሠርቱ ቃላት (ትእዛዛት) ምሳሌ" },
-          ],
+        {
+          icon: "music",
+          title: "ዘመናዊ ዘዴ",
+          desc: "ባህላዊ ሙዚቃን በዘመናዊ ዘዴ እናስተምራለን",
         },
-      },
+        {
+          icon: "certificate",
+          title: "የምስክር ወረቀት",
+          desc: "ከትምህርቱ በኋላ የምስክር ወረቀት እንሰጣለን",
+        },
+      ],
+    },
+    gallery: {
+      title: "ማዕከለ ስእላት",
+      subtitle: "ከተማሪዎቻችን ጋር",
+      images: [
+        {
+          src: "/images/abel34.jpg",
+          title: "የምረቃ ፕሮግራም",
+          category: "ምረቃ",
+        },
+        {
+          src: "/images/abel5.jpg",
+          title: "በገና ትርኢት",
+          category: "ትርኢት",
+        },
+        {
+          src: "/images/abel25.jpg",
+          title: "የመምህራን ስብሰባ",
+          category: "መምህራን",
+        },
+        {
+          src: "/images/abel63.png",
+          title: "ተማሪ በልምምድ",
+          category: "ልምምድ",
+        },
+        { src: "/images/abel44.jpg", title: "የተማሪዎች ምረቃ", category: "ምረቃ" },
+        {
+          src: "/images/abel35.png",
+          title: "የሙዚቃ መሳሪያዎች",
+          category: "መሳሪያዎች",
+        },
+        {
+          src: "/images/abel17.jpg",
+          title: "የመክፈቻ ፕሮግራም",
+          category: "ፕሮግራም",
+        },
+        {
+          src: "/images/abel48.jpg",
+          title: "መምህር እና ተማሪ",
+          category: "ትምህርት",
+        },
+        {
+          src: "/images/abel48.jpg",
+          title: "የአቤል ቤተሰቦች",
+          category: "ቤተሰብ",
+        },
+        { src: "/images/abel37.png", title: "አበው መምህር", category: "መምህራን" },
+      ],
     },
     courses: {
-      title: "ትምህርቶች",
+      title: "ትምህርቶቻችን",
+      subtitle: "የምንሰጣቸው ኮርሶች",
       items: [
         {
           name: "በገና",
           category: "መንፈሳዊ",
           img: "/images/abel15.jpg",
+          description: "የጥንታዊ መንፈሳዊ ዜማ መሳሪያ ትምህርት",
+          duration: "6 ወራት",
+          level: "ሁሉም ደረጃ",
         },
         {
           name: "መሰንቆ",
           category: "ባህል",
           img: "/images/abel28.jpg",
+          description: "የበገና ትምህርት",
+          duration: "4 ወራት",
+          level: "ጀማሪ",
         },
         {
           name: "ክራር",
           category: "ዜማ",
-          img: "https://i.pinimg.com/736x/8e/3c/55/8e3c5520268502844890604344585141.jpg",
+          img: "/images/abel-student.png",
+          description: "የክራር ዜማ እና አጨዋወት ትምህርት",
+          duration: "4 ወራት",
+          level: "ሁሉም ደረጃ",
         },
         {
           name: "ዋሽንት",
           category: "እረኝነት",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Washint.jpg/800px-Washint.jpg",
+          description: "የባህላዊ ነፋስ መሳሪያ ትምህርት",
+          duration: "3 ወራት",
+          level: "ጀማሪ",
         },
       ],
     },
+    testimonials: [
+      {
+        quote:
+          "በአቤል የበገና ትምህርት ቤት ውስጥ ያገኘሁት ትምህርት ህይወቴን ቀይሮታል። አሁን በገናን በደንብ እንዲያስችለኝ ሆኗል።",
+        name: "ሰላማዊት ተስፋዬ",
+        role: "ተማሪ",
+        image: "/images/abel77.png",
+      },
+      {
+        quote: "መምህራኑ በጣም ታታሪ እና አስተማሪ ናቸው። መንፈሳዊ መሳሪያዎችን በዘመናዊ መንገድ ያስተምራሉ።",
+        name: "ዳንኤል አበራ",
+        role: "ምሩቅ",
+        image: "/images/abel75.png",
+      },
+      {
+        quote:
+          "ልጆቼን ወደዚህ ትምህርት ቤት ስወስድ የተሻለ ውሳኔ ነበር። አሁን በቤተ ክርስቲያን ውስጥ በበገና ያገለግላሉ።",
+        name: "ሰሎሞን ገብሬ",
+        role: "ወላጅ",
+        image: "/images/abel76.png",
+      },
+    ],
     locations: {
-      title: "አድራሻ",
+      title: "አድራሻዎቻችን",
+      subtitle: "በአዲስ አበባ 4 ቅርንጫፎች",
       list: [
-        { city: "ፒያሳ", address: "አባቢያ ራመት ታቦር ህንጻ 4ተኛ ፎቅ" },
-        { city: "መገናኛ", address: "ሲቲ ሞል 7ኛ ፎቅ" },
-        { city: "ለቡ", address: "መድኀኔአለም ፊለፊት ደስታ ሚኒ ሞል 4 ኛ ፎቅ" },
-        { city: "Chicago", address: "USA Branch" },
+        {
+          city: "ፒያሳ",
+          address: "አባቢያ ራመት ታቦር ህንጻ 4ተኛ ፎቅ",
+          phone: "091 267 4600",
+        },
+        { city: "መገናኛ", address: "ሲቲ ሞል 7ኛ ፎቅ", phone: "091 267 4600" },
+        {
+          city: "ለቡ",
+          address: "መድኀኔአለም ፊለፊት ደስታ ሚኒ ሞል 4 ኛ ፎቅ",
+          phone: "091 267 4600",
+        },
+        { city: "Chicago", address: "USA Branch", phone: "+1 XXX XXX XXXX" },
       ],
     },
-    footer: { talk: "እንማማር?", rights: "መብቱ በህግ የተጠበቀ ነው።" },
+    footer: {
+      talk: "እንማማር?",
+      rights: "መብቱ በህግ የተጠበቀ ነው።",
+      followUs: "ተከተሉን",
+      subscribeText: "አዲስ ዜና እና ፕሮግራሞች ለማግኘት ይመዝገቡ",
+    },
   },
   en: {
     nav: {
       home: "Home",
       about: "About",
+      gallery: "Gallery",
       courses: "Courses",
       location: "Locations",
       contact: "Contact",
     },
     hero: {
-      tagline: "Ethiopian Orthodox Tewahedo",
-      title: "Abel Begena School",
-      desc: "The center for Yaredic melody and traditional instruments. Preserving heritage through art.",
-      cta: "Join Class",
+      slides: [
+        {
+          image: "/images/abel23.jpg",
+          tagline: "Ethiopian Orthodox Tewahedo",
+          title: "Abel Begena Music School",
+          description:
+            "The center for Yaredic melody and traditional instruments. Preserving heritage through art.",
+        },
+        {
+          image: "/images/abel34.jpg",
+          tagline: "Spiritual Music Education",
+          title: "Learn Begena With Us",
+          description:
+            "Ancient Ethiopian music school passing traditions to the new generation.",
+        },
+        {
+          image: "/images/abel44.jpg",
+          tagline: "Thousands Graduated",
+          title: "Preserving Culture",
+          description:
+            "We have trained thousands of students in Begena, Krar, Masinqo and Washint.",
+        },
+      ],
     },
-    aboutPage: {
-      title: "About Begena",
-      subtitle: "History & Symbolism",
-      tabs: ["Meaning", "History", "Symbolism"],
-      content: {
-        0: {
-          head: "Etymology & Definition",
-          body: "Directly translated, 'Begena' means song/harp, but mystically it implies ethics and morality. It is a unique ancient instrument of the Ethiopian Church, second only to Israel in history. Derived from the verb 'Begene' (to strike, pluck, or vibrate).",
-          quote: "'Sing praises to God with the harp.' (Psalm 48:5)",
-        },
-        1: {
-          head: "Historical Origins",
-          body: "The Begena is the first musical instrument mentioned in the Bible. Jubal (Yuval) created it to express grief after his father Lamech accidentally killed his ancestor Cain. It was brought to Ethiopia by ancient kings or with the Ark of the Covenant during the time of Menelik I. It is strictly used for prayer, repentance, and praise.",
-          quote: "An instrument of Repentance and Praise.",
-        },
-        2: {
-          head: "Spiritual Symbolism",
-          body: "The Begena typically has ten strings, symbolizing the Ten Commandments. The striking of the string by the hand produces sound from the box below, symbolizing the union of Divinity and Flesh in the womb of the Virgin Mary.",
-          list: [
-            { k: "Top Beam", v: "Symbol of God's Will (Heaven)" },
-            { k: "Bottom Box", v: "Symbol of the Virgin's Womb" },
-            { k: "Left & Right Pillars", v: "Symbol of Michael & Gabriel" },
-            { k: "Ten Strings", v: "Symbol of the Ten Commandments" },
-          ],
-        },
+    about: {
+      subtitle: "About Us",
+      title: "Ancient Art Modern Education",
+      description:
+        "Abel Begena Music School was founded in 2018 and has graduated over 5,000 students, teaching traditional music in a modern way. Our mission is to pass on traditional and spiritual music to the new generation.",
+      stats: [
+        { value: "5000", label: "Graduates" },
+        { value: "4", label: "Branches" },
+        { value: "10", label: "Years" },
+      ],
+    },
+    skills: [
+      {
+        name: "Begena",
+        percentage: 95,
+        description: "Sacred spiritual instrument",
       },
+      {
+        name: "Krar",
+        percentage: 90,
+        description: "Traditional lyre instrument",
+      },
+      {
+        name: "Masinqo",
+        percentage: 85,
+        description: "Single-stringed bowed lute",
+      },
+      {
+        name: "Washint",
+        percentage: 80,
+        description: "Traditional bamboo flute",
+      },
+    ],
+    whyUs: {
+      title: "Why Choose Us?",
+      items: [
+        {
+          icon: "award",
+          title: "Expert Teachers",
+          desc: "Professionals with over 20 years of experience",
+        },
+        {
+          icon: "users",
+          title: "Group Learning",
+          desc: "We teach in groups and privately",
+        },
+        {
+          icon: "music",
+          title: "Modern Methods",
+          desc: "Teaching traditional music with modern techniques",
+        },
+        {
+          icon: "certificate",
+          title: "Certification",
+          desc: "Certificate provided upon completion",
+        },
+      ],
+    },
+    gallery: {
+      title: "Gallery",
+      subtitle: "With Our Students",
+      images: [
+        {
+          src: "/images/abel34.jpg",
+          title: "Graduation Ceremony",
+          category: "Graduation",
+        },
+        {
+          src: "/images/abel5.jpg",
+          title: "Begena Performance",
+          category: "Performance",
+        },
+        {
+          src: "/images/abel25.jpg",
+          title: "Master Teachers",
+          category: "Teachers",
+        },
+        {
+          src: "/images/abel48.png",
+          title: "Student Practice",
+          category: "Practice",
+        },
+        {
+          src: "/images/abel44.jpg",
+          title: "Student Graduation",
+          category: "Graduation",
+        },
+        {
+          src: "/images/abel35.png",
+          title: "Musical Instruments",
+          category: "Instruments",
+        },
+        {
+          src: "/images/abel32.jpg",
+          title: "Grand Opening",
+          category: "Events",
+        },
+        {
+          src: "/images/abel48.jpg",
+          title: "Teacher and Student",
+          category: "Education",
+        },
+        {
+          src: "/images/abel23.jpg",
+          title: "Community Gathering",
+          category: "Community",
+        },
+        {
+          src: "/images/abel37.png",
+          title: "Elder Master",
+          category: "Teachers",
+        },
+      ],
     },
     courses: {
-      title: "Selected Courses",
+      title: "Our Courses",
+      subtitle: "Programs We Offer",
       items: [
         {
           name: "Begena",
           category: "Spiritual",
-          img: "/images/abel15.jpg",
+          img: "/images/abel5.jpg",
+          description: "Learn the ancient sacred spiritual instrument",
+          duration: "6 Months",
+          level: "All Levels",
         },
         {
           name: "Masinqo",
-          category: "Tradition",
+          category: "Traditional",
           img: "/images/abel28.jpg",
+          description: "Traditional single-stringed instrument training",
+          duration: "4 Months",
+          level: "Beginner",
         },
         {
           name: "Krar",
           category: "Melody",
-          img: "https://i.pinimg.com/736x/8e/3c/55/8e3c5520268502844890604344585141.jpg",
+          img: "/images/abel-student.png",
+          description: "Learn the beautiful Ethiopian lyre",
+          duration: "4 Months",
+          level: "All Levels",
         },
         {
           name: "Washint",
-          category: "Shepherd",
+          category: "Wind",
           img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Washint.jpg/800px-Washint.jpg",
+          description: "Traditional bamboo flute instruction",
+          duration: "3 Months",
+          level: "Beginner",
         },
       ],
     },
+    testimonials: [
+      {
+        quote:
+          "The education I received at Abel Begena School changed my life. Now I can play the Begena beautifully.",
+        name: "Selamawit Tesfaye",
+        role: "Student",
+        image: "/images/abel77.png",
+      },
+      {
+        quote:
+          "The teachers are dedicated and knowledgeable. They teach traditional music in a modern way.",
+        name: "Daniel Abera",
+        role: "Graduate",
+        image: "/images/abel75.png",
+      },
+      {
+        quote:
+          "Taking my children to this school was the best decision. Now they serve at church with Begena.",
+        name: "Solomon Gebre",
+        role: "Parent",
+        image: "/images/abel76.png",
+      },
+    ],
     locations: {
-      title: "Locations",
+      title: "Our Locations",
+      subtitle: "4 Branches in Addis Ababa",
       list: [
-        { city: "Piassa", address: "Ababiya Ramet Tabor Bldg, 4th Floor" },
-        { city: "Megenagna", address: "City Mall, 7th Floor" },
-        { city: "Lebu", address: "Opposite Medhanialem, Desta Mini Mall" },
-        { city: "Chicago", address: "USA Branch" },
+        {
+          city: "Piassa",
+          address: "Ababiya Ramet Tabor Bldg, 4th Floor",
+          phone: "091 267 4600",
+        },
+        {
+          city: "Megenagna",
+          address: "City Mall, 7th Floor",
+          phone: "091 267 4600",
+        },
+        {
+          city: "Lebu",
+          address: "Opposite Medhanialem, Desta Mini Mall",
+          phone: "091 267 4600",
+        },
+        { city: "Chicago", address: "USA Branch", phone: "+1 XXX XXX XXXX" },
       ],
     },
-    footer: { talk: "Let's Talk?", rights: "All Rights Reserved." },
+    footer: {
+      talk: "Let's Connect",
+      rights: "All Rights Reserved.",
+      followUs: "Follow Us",
+      subscribeText: "Subscribe for news and program updates",
+    },
   },
 };
