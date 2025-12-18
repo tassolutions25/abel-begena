@@ -379,7 +379,7 @@ const Home = ({ lang }) => {
           <div className="absolute inset-0 bg-gradient-radial from-white/10 via-transparent to-transparent opacity-50" />
           <div className="absolute inset-0 bg-mesh opacity-20" />
 
-          <div className="relative z-10 pt-20 md:pt-20 px-8 md:px-16 text-center">
+          <div className="relative z-10 py-20 md:py-20 px-8 md:px-16 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

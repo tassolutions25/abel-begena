@@ -3,7 +3,7 @@ export const content = {
     nav: {
       home: "መነሻ",
       about: "ስለ በገና",
-      gallery: "ማዕከለ ስእላት",
+      gallery: "ፎቶዎች",
       courses: "ትምህርቶች",
       location: "አድራሻ",
       contact: "ያግኙን",
@@ -14,13 +14,13 @@ export const content = {
           image: "/images/abel23.jpg",
           tagline: "የኢትዮጵያ ኦርቶዶክስ ተዋህዶ",
           title: "አቤል የበገና ትምህርት ቤት",
-          description: "የያሬዳዊ ዜማ እና የባህል ሙዚቃ መሳሪያዎች መማሪያ። ጥበብን ከነወዙ እንሰጣለን።",
+          description: "የበገና እና የሌሎች መንፈሳዊ መሳሪያዎች መማሪያ። የአባቶቻችንን ጥበብ እንረከባለን።",
         },
         {
           image: "/images/abel34.jpg",
           tagline: "የመንፈሳዊ ዜማ ትምህርት",
-          title: "በገና ይማሩ ከእኛ ጋር",
-          description: "የጥንታዊ የኢትዮጵያ ሙዚቃ ትምህርት ቤት ወደ አዲስ ትውልድ እናስተላልፋለን።",
+          title: "በገና ከእኛ ጋር ይማሩ",
+          description: "የጥንታዊ የኢትዮጵያን የመንፈሳዊ መሳሪያዎች ዕውቀት ከትውልድ ትውልድ እናስተላልፋለን።",
         },
         {
           image: "/images/abel44.jpg",
@@ -32,13 +32,13 @@ export const content = {
     },
     about: {
       subtitle: "ስለ እኛ",
-      title: "ጥንታዊ ጥበብ ዘመናዊ ትምህርት",
+      title: "ጥንታዊ የአባቶችን ጥበብ እናስስተምራለን",
       description:
         "አቤል የበገና ትምህርት ቤት በ2010 ዓ.ም ተመስርቶ እስከ ዛሬ ድረስ ከ5000 በላይ ተማሪዎችን በማስመረቅ የባህል ሙዚቃ ትምህርትን በአዲስ መልኩ እያስተማረ ይገኛል። የእኛ አላማ ባህላዊ እና መንፈሳዊ ሙዚቃን ለአዲሱ ትውልድ ማስተላለፍ ነው።",
       stats: [
         { value: "5000", label: "ምሩቃን" },
         { value: "4", label: "ቅርንጫፎች" },
-        { value: "10", label: "ዓመታት" },
+        { value: "7", label: "ዓመታት" },
       ],
     },
     aboutBegena: {
@@ -53,13 +53,37 @@ export const content = {
           content: `በገና ለመጀመሪያ ጊዜ የደረደሩት የላሜህ ልጅ የዩባል (ኢዮቤል) ልጆች ነበሩ (ዘፍ.4፡19-24)። ይህንንም መሳሪያ የሠሩት አያታቸው ላሜህ በስህተት ልጁን ቱባልቃይንን እና ቅድመ አያቱን ቃየንን በመግደሉ ምክንያት በተፈጠረው ጥልቅ ሐዘን ነበር። ስለዚህ በገና ከመነሻው የሐዘን፣ የንስሐ፣ የልመናና የምስጋና መሣሪያ ነው። ወደ ኢትዮጵያ የገባው ከክርስቶስ ልደት በፊት በቀደምት የኢትዮጵያ ነገስታት በኩል ሲሆን፣ ታላቁ ቅዱስ ያሬድም ለቤተክርስቲያን አገልግሎት በስፋት ተጠቅሞበታል።`,
         },
         {
-          heading: "ምሳሌያዊ ትምህርቶች",
+          heading: "ምሳሌዎች",
           content: `የበገና አሥሩ አውታር የዓሠርቱ ቃላት (ትእዛዛት) ምሳሌ ናቸው።
           - ላይኛው ምስሶ፡ የፈቃደ እግዚአብሔር
           - ታችኛው ብራ፡ የማኅፀነ ድንግል
           - ግራና ቀኙ፡ የሚካኤልና የገብርኤል (ወይም የብሉይና የሐዲስ) ምሳሌ ናቸው።
           
           አውታሩ በእጅ ሲመታ ድምፁ ከታችኛው (ከቆዳው) ዘንድ እንደሚሰማ፣ መለኮትና ሥጋ ተዋሕደው ከማኅፀነ ድንግል ዘንድ ለማደራቸው ምሳሌ ነው።`,
+        },
+        {
+          heading: "የበገና አገልግሎት",
+          content: `በገና የሚያገለግለው ለመንፈሳዊ ትሩፋት ማለትም ለምስጋናና ለልመና ብቻ ነው፡፡ በመሆኑም ተመርጦ ለቤተ መቅደስ አገልግሎት ብቻ ይውላል፡፡`,
+        },
+        {
+          heading: "የበገና ወደ አትዮጵያ አመጣጥ",
+          content: `በገና ወደ ኢትዮጵያ የገባው ከክርስቶስ ልደት በፊት በቀደምት የኢትዮጵያ ነገስታት በኩል ሲሆን በቅርብም ከነበሩ ነገስታት አጼ ምኒልክና አጼ ቴዎድሮስ በገና ይደረድሩ እንደ ነበር ይነገራል። በሌላ በኩል ደግሞ
+          የበገና ወደ ሀገራችን ኢትዮጵያ የአመጣጥ ታሪክ ሁለት ዓይነት አመለካከቶች አሉ፡፡
+          የሀገራችን ኢትዮጵያ የሥልጣኔዋ ውጤትና በሕገ ልቡና የማመንዋ ውጤት ነው፡፡ (የተጀመረ እዚሁ ሀገራችን ነው የሚል ታሪካዊ አንድምታም አለ፡፡)
+          በቀዳማዊ ምኒሊክ ጊዜ ከታቦተ ጽዮን ጋራ አብረው ከመጡት የዜማና የሥርዓተ አምልኮ ንዋያተ ቅድሳት፣ መጻሕፍት… ወዘተ አንድ ሆኖ የመጣ ነው የሚሉ ሲሆን ይህንኑ አመለካከትም ይበልጥ በሀገራችን ጠበብት ሊቃውንት በስፋት ይተረጎማል፣ ይተረካል… ይታመናልም፡፡`,
+        },
+        {
+          heading: "ቃለ በገና፡- ቃለ ማኅዘኒ",
+          content: `በገና ድምፀ ማኅዘኒ ነው፡፡ ምክንያቱም በተለይ የኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተክርስቲያን ሊቃውንት አራቅቀው እንደሚተረጉሙት ይህ ምድራዊ ማኅዘኒ ዜማ የመጣው በዮባል ልጆች ኃዘንና እንጉርጉሮ ምክንያት እንደሆነ ይኸው ከላይ የተጠቀሰው ታሪክ ጠቅሰው ያትታሉ፣ ያመሰጥራሉ፡፡ ይኸውም ከላይ እንደተገለጸው፡- ቃየል ወንድሙ አቤልን መግደሉ፤ ቃየል ደግሞ በልጁ በላሜህ መገደሉን፤ እያስታወሱ የዩባል ልጆች የደረቀ እንጨት ጠርበውና አለዝበው፣ ቆዳ ወጥረው፣ ፍቀው፣ አድርቀውና ዳምጠው፣ ጅማት አክርረውና አበግነው... በቃለ ማኅዘኒ፣ በድምፀ ማኅዘኒ... ያንጐራጉሩ ነበር በማለት ሊቃውንቶቻችን ያትታሉ፡፡ በዚህ ታሪካዊ እውነታ ምክንያት ነው "በገና" ቃለ ማኅዘኒ፣ ድምጸ ማኅዘኒ ሆኖ የሐዘን ማለትም የንስሐ፣ የልመናና የምስጋና ማቅረቢያ የዜማ መሣሪያ በመሆን አገልግሎት በመስጠት ላይ የሚገኘው፡፡ የበገና የአጀማመሩ ታሪክ በዩባል ልጆች ሆኖ ይዘቱም ሆነ አይነቱ እየተሻሻለ መጥቶ ዘመናት አልፎ ከትውልድ ትውልድ ሲተካ ማኅበራዊም ሆነ መንፈሳዊ አገልግሎቱ በጥልቀት የታወቀው በመዝሙረኛው(በበገነኛው) በቅዱስ ዳዊት ነው።`,
+        },
+        {
+          heading: "የበገና አቀራረብ ዘዴዎች",
+          content: `በገና በሁለት መልኩ ሊቀርብ ወይ ሊደረደር ይችላል፡፡
+          በእጅና፡
+          በድሕንጻ፡- (ድሕንጻ፡- መግረፊያ ሆኖ እጅግ መሳጭና የበለጠ በሚመስጥ መልኩ በገናውን የሚያስጮኽ የበገና ማጫወቻ ነው)
+          “በድሕንጻ መንፈስ ዝብጢ አውታረ መሰንቆሁ ለልብየ
+          ወአስተንፍሲ ውስተ አፉየ ከመ እኩን እንዚራሁ
+          ለበኩርኪ……) እንዲል (መጽሐፈ ሰዓታት፡ እሴብሕጸጋኪ)`,
         },
       ],
     },
@@ -74,8 +98,8 @@ export const content = {
       items: [
         {
           icon: "award",
-          title: "ልምድ ያለን መምህራን",
-          desc: "ከ20 ዓመት በላይ ልምድ ያላቸው ባለሙያዎች",
+          title: "ልምድ ያላቸው መምህራን",
+          desc: "ብዙ ልምድ ያላቸው ባለሙያዎች",
         },
         {
           icon: "users",
@@ -84,8 +108,8 @@ export const content = {
         },
         {
           icon: "music",
-          title: "ዘመናዊ ዘዴ",
-          desc: "ባህላዊ ሙዚቃን በዘመናዊ ዘዴ እናስተምራለን",
+          title: "ቀላል የስተማሪያ ዘዴ",
+          desc: "መንፈሳዊ የዜማ መሳሪያ ትምህርትን ቀላል በሆነ ዘዴ እናስተምራለን",
         },
         {
           icon: "certificate",
@@ -95,7 +119,7 @@ export const content = {
       ],
     },
     gallery: {
-      title: "ማዕከለ ስእላት",
+      title: "ፎቶዎች",
       subtitle: "ከተማሪዎቻችን ጋር",
       images: [
         {
@@ -105,24 +129,24 @@ export const content = {
         },
         {
           src: "/images/abel5.jpg",
-          title: "በገና ትርኢት",
-          category: "ትርኢት",
+          title: "የበገና ምሽት",
+          category: "ናጌን",
         },
         {
           src: "/images/abel25.jpg",
-          title: "የመምህራን ስብሰባ",
+          title: "ታላላቅ መምህራን ",
           category: "መምህራን",
         },
         {
           src: "/images/abel63.png",
-          title: "ተማሪ በልምምድ",
+          title: "ተማሪዎች በልምምድ",
           category: "ልምምድ",
         },
         { src: "/images/abel44.jpg", title: "የተማሪዎች ምረቃ", category: "ምረቃ" },
         {
-          src: "/images/abel35.png",
-          title: "የሙዚቃ መሳሪያዎች",
-          category: "መሳሪያዎች",
+          src: "/images/abel18.jpg",
+          title: "የበገና መዝሙሮች",
+          category: "መዝሙሮች",
         },
         {
           src: "/images/abel17.jpg",
@@ -131,15 +155,15 @@ export const content = {
         },
         {
           src: "/images/abel48.jpg",
-          title: "መምህር እና ተማሪ",
+          title: "መምህራን እና ተማሪዎች",
           category: "ትምህርት",
         },
         {
           src: "/images/abel48.jpg",
-          title: "የአቤል ቤተሰቦች",
+          title: "የአቤል በና ቤተሰቦች",
           category: "ቤተሰብ",
         },
-        { src: "/images/abel37.png", title: "አበው መምህር", category: "መምህራን" },
+        { src: "/images/abel37.png", title: "አበው መምህራን", category: "መምህራን" },
       ],
     },
     courses: {
@@ -150,51 +174,53 @@ export const content = {
           name: "በገና",
           category: "መንፈሳዊ",
           img: "/images/abel15.jpg",
-          description: "የጥንታዊ መንፈሳዊ ዜማ መሳሪያ ትምህርት",
-          duration: "6 ወራት",
+          description: "የበገና ትምህርት",
+          duration: "3, 6, 9 ወራት",
           level: "ሁሉም ደረጃ",
         },
         {
           name: "መሰንቆ",
-          category: "ባህል",
+          category: "መንፈሳዊ",
           img: "/images/abel28.jpg",
-          description: "የበገና ትምህርት",
-          duration: "4 ወራት",
-          level: "ጀማሪ",
+          description: "የመሰንቆ ትምህርት",
+          duration: "2, 6, 9 ወራት",
+          level: "ሁሉም ደረጃ",
         },
         {
           name: "ክራር",
-          category: "ዜማ",
-          img: "/images/abel-student.png",
-          description: "የክራር ዜማ እና አጨዋወት ትምህርት",
-          duration: "4 ወራት",
+          category: "መንፈሳዊ",
+          img: "/images/kirar.jpg",
+          description: "የክራር ትምህርት",
+          duration: "3, 6, 9 ወራት",
           level: "ሁሉም ደረጃ",
         },
         {
           name: "ዋሽንት",
-          category: "እረኝነት",
-          img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Washint.jpg/800px-Washint.jpg",
-          description: "የባህላዊ ነፋስ መሳሪያ ትምህርት",
-          duration: "3 ወራት",
+          category: "መንፈሳዊ",
+          img: "washnt.jpg",
+          description: "የዋሽንት ትምህርት",
+          duration: "3, 6, 9 ወራት",
           level: "ጀማሪ",
         },
       ],
     },
     testimonials: [
       {
-        quote: "በአቤል የበገና ትምህርት ቤት ውስጥ ያገኘሁት ትምህርት ህይወቴን ቀይሮታል። አሁን በገናን በደንብ እንዲያስችለኝ ሆኗል።",
+        quote:
+          "በአቤል የበገና ትምህርት ቤት ውስጥ ያገኘሁት ትምህርት ህይወቴን ቀይሮታል። አሁን በገናን በደንብ እንዲያስችለኝ ሆኗል።",
         name: "ሰላማዊት ተስፋዬ",
         role: "ተማሪ",
         image: "/images/abel77.png",
       },
       {
-        quote: "መምህራኑ በጣም ታታሪ እና አስተማሪ ናቸው። መንፈሳዊ መሳሪያዎችን በዘመናዊ መንገድ ያስተምራሉ።",
+        quote: "መምህራኑ በጣም ታታሪ እና አስተማሪ ናቸው። መንፈሳዊ መሳሪያዎችን በቀላል መንገድ ያስተምራሉ።",
         name: "ዳንኤል አበራ",
         role: "ምሩቅ",
         image: "/images/abel75.png",
       },
       {
-        quote: "ልጆቼን ወደዚህ ትምህርት ቤት ስወስድ የተሻለ ውሳኔ ነበር። አሁን በቤተ ክርስቲያን ውስጥ በበገና ያገለግላሉ።",
+        quote:
+          "ልጆቼን ወደዚህ ትምህርት ቤት ስወስድ የተሻለ ውሳኔ ነበር። አሁን በቤተ ክርስቲያን ውስጥ በበገና ያገለግላሉ።",
         name: "ሰሎሞን ገብሬ",
         role: "ወላጅ",
         image: "/images/abel76.png",
@@ -212,7 +238,7 @@ export const content = {
         { city: "መገናኛ", address: "ሲቲ ሞል 7ኛ ፎቅ", phone: "091 267 4600" },
         {
           city: "ለቡ",
-          address: "መድኀኔአለም ፊለፊት ደስታ ሚኒ ሞል 4 ኛ ፎቅ",
+          address: "መድኀኔአለም ፊትለፊት ደስታ ሚኒ ሞል 4 ኛ ፎቅ",
           phone: "091 267 4600",
         },
         { city: "Chicago", address: "USA Branch", phone: "+1 XXX XXX XXXX" },
@@ -222,7 +248,7 @@ export const content = {
       talk: "እንማማር?",
       rights: "መብቱ በህግ የተጠበቀ ነው።",
       followUs: "ተከተሉን",
-      subscribeText: "አዲስ ዜና እና ፕሮግራሞች ለማግኘት ይመዝገቡ",
+      subscribeText: "አዳዲስ ዜናዎችን እና ፕሮግራሞችን ለማግኘት ይመዝገቡ",
     },
   },
   en: {
@@ -240,19 +266,22 @@ export const content = {
           image: "/images/abel23.jpg",
           tagline: "Ethiopian Orthodox Tewahedo",
           title: "Abel Begena Music School",
-          description: "The center for Yaredic melody and traditional instruments. Preserving heritage through art.",
+          description:
+            "The center for Yaredic melody and spiritual musical instruments. Preserving spiritual heritage through art.",
         },
         {
           image: "/images/abel34.jpg",
-          tagline: "Spiritual Music Education",
+          tagline: "Spiritual Hymn Education",
           title: "Learn Begena With Us",
-          description: "Ancient Ethiopian music school passing traditions to the new generation.",
+          description:
+            "Ancient Ethiopian hymn school passing traditions to the new generation.",
         },
         {
           image: "/images/abel44.jpg",
           tagline: "Thousands Graduated",
-          title: "Preserving Culture",
-          description: "We have trained thousands of students in Begena, Krar, Masinqo and Washint.",
+          title: "Preserving Orthodox Heritage",
+          description:
+            "We have trained thousands of students in Begena, Krar, Masinqo and Washint.",
         },
       ],
     },
@@ -264,7 +293,7 @@ export const content = {
       stats: [
         { value: "5000", label: "Graduates" },
         { value: "4", label: "Branches" },
-        { value: "10", label: "Years" },
+        { value: "7", label: "Years" },
       ],
     },
     aboutBegena: {
@@ -415,7 +444,7 @@ export const content = {
         {
           name: "Krar",
           category: "Melody",
-          img: "/images/abel-student.png",
+          img: "/images/kirar.jpg",
           description: "Learn the beautiful Ethiopian lyre",
           duration: "4 Months",
           level: "All Levels",
@@ -423,7 +452,7 @@ export const content = {
         {
           name: "Washint",
           category: "Wind",
-          img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Washint.jpg/800px-Washint.jpg",
+          img: "washnt.jpg",
           description: "Traditional bamboo flute instruction",
           duration: "3 Months",
           level: "Beginner",
@@ -432,19 +461,22 @@ export const content = {
     },
     testimonials: [
       {
-        quote: "The education I received at Abel Begena School changed my life. Now I can play the Begena beautifully.",
+        quote:
+          "The education I received at Abel Begena School changed my life. Now I can play the Begena beautifully.",
         name: "Selamawit Tesfaye",
         role: "Student",
         image: "/images/abel77.png",
       },
       {
-        quote: "The teachers are dedicated and knowledgeable. They teach traditional music in a modern way.",
+        quote:
+          "The teachers are dedicated and knowledgeable. They teach traditional music in a modern way.",
         name: "Daniel Abera",
         role: "Graduate",
         image: "/images/abel75.png",
       },
       {
-        quote: "Taking my children to this school was the best decision. Now they serve at church with Begena.",
+        quote:
+          "Taking my children to this school was the best decision. Now they serve at church with Begena.",
         name: "Solomon Gebre",
         role: "Parent",
         image: "/images/abel76.png",
@@ -479,4 +511,4 @@ export const content = {
       subscribeText: "Subscribe for news and program updates",
     },
   },
-}
+};
