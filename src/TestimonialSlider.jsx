@@ -19,7 +19,7 @@ const TestimonialSlider = ({ testimonials, lang }) => {
     );
 
   return (
-    <div className="relative py-20">
+    <div className="relative pt-20">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 text-amber-500/10">
         <Quote size={120} />
       </div>

@@ -182,8 +182,7 @@ export const content = {
     },
     testimonials: [
       {
-        quote:
-          "በአቤል የበገና ትምህርት ቤት ውስጥ ያገኘሁት ትምህርት ህይወቴን ቀይሮታል። አሁን በገናን በደንብ እንዲያስችለኝ ሆኗል።",
+        quote: "በአቤል የበገና ትምህርት ቤት ውስጥ ያገኘሁት ትምህርት ህይወቴን ቀይሮታል። አሁን በገናን በደንብ እንዲያስችለኝ ሆኗል።",
         name: "ሰላማዊት ተስፋዬ",
         role: "ተማሪ",
         image: "/images/abel77.png",
@@ -195,8 +194,7 @@ export const content = {
         image: "/images/abel75.png",
       },
       {
-        quote:
-          "ልጆቼን ወደዚህ ትምህርት ቤት ስወስድ የተሻለ ውሳኔ ነበር። አሁን በቤተ ክርስቲያን ውስጥ በበገና ያገለግላሉ።",
+        quote: "ልጆቼን ወደዚህ ትምህርት ቤት ስወስድ የተሻለ ውሳኔ ነበር። አሁን በቤተ ክርስቲያን ውስጥ በበገና ያገለግላሉ።",
         name: "ሰሎሞን ገብሬ",
         role: "ወላጅ",
         image: "/images/abel76.png",
@@ -242,22 +240,19 @@ export const content = {
           image: "/images/abel23.jpg",
           tagline: "Ethiopian Orthodox Tewahedo",
           title: "Abel Begena Music School",
-          description:
-            "The center for Yaredic melody and traditional instruments. Preserving heritage through art.",
+          description: "The center for Yaredic melody and traditional instruments. Preserving heritage through art.",
         },
         {
           image: "/images/abel34.jpg",
           tagline: "Spiritual Music Education",
           title: "Learn Begena With Us",
-          description:
-            "Ancient Ethiopian music school passing traditions to the new generation.",
+          description: "Ancient Ethiopian music school passing traditions to the new generation.",
         },
         {
           image: "/images/abel44.jpg",
           tagline: "Thousands Graduated",
           title: "Preserving Culture",
-          description:
-            "We have trained thousands of students in Begena, Krar, Masinqo and Washint.",
+          description: "We have trained thousands of students in Begena, Krar, Masinqo and Washint.",
         },
       ],
     },
@@ -437,22 +432,19 @@ export const content = {
     },
     testimonials: [
       {
-        quote:
-          "The education I received at Abel Begena School changed my life. Now I can play the Begena beautifully.",
+        quote: "The education I received at Abel Begena School changed my life. Now I can play the Begena beautifully.",
         name: "Selamawit Tesfaye",
         role: "Student",
         image: "/images/abel77.png",
       },
       {
-        quote:
-          "The teachers are dedicated and knowledgeable. They teach traditional music in a modern way.",
+        quote: "The teachers are dedicated and knowledgeable. They teach traditional music in a modern way.",
         name: "Daniel Abera",
         role: "Graduate",
         image: "/images/abel75.png",
       },
       {
-        quote:
-          "Taking my children to this school was the best decision. Now they serve at church with Begena.",
+        quote: "Taking my children to this school was the best decision. Now they serve at church with Begena.",
         name: "Solomon Gebre",
         role: "Parent",
         image: "/images/abel76.png",
@@ -487,4 +479,4 @@ export const content = {
       subscribeText: "Subscribe for news and program updates",
     },
   },
-};
+}

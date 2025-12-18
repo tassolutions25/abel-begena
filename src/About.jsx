@@ -27,7 +27,8 @@ const About = ({ lang }) => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url('/images/abel53.jpeg')` }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#0d0d0d]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-[#0d0d0d]" />
+        <div className="absolute inset-0 bg-gradient-radial from-amber-500/10 via-transparent to-transparent opacity-30" />
         <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center px-6">
             <motion.span
@@ -58,7 +59,7 @@ const About = ({ lang }) => {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 px-6 md:px-20">
+      <section className="pt-20 md:pt-20 px-6 md:px-20">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row gap-16">
             <div className="w-full lg:w-1/3">
@@ -69,8 +70,8 @@ const About = ({ lang }) => {
                     onClick={() => setActiveTab(idx)}
                     className={`w-full text-left px-6 py-5 flex items-center justify-between rounded-lg transition-all duration-300 group ${
                       activeTab === idx
-                        ? "bg-amber-500/10 border-l-4 border-amber-500 text-white"
-                        : "bg-white/[0.02] border-l-4 border-transparent text-gray-500 hover:text-gray-300 hover:bg-white/[0.04]"
+                        ? "bg-amber-500/10 border-l-4 border-amber-500 text-white shadow-glow-sm"
+                        : "bg-white/[0.02] border-l-4 border-transparent text-gray-500 hover:text-gray-300 hover:bg-white/[0.04] hover:border-amber-500/20"
                     }`}
                   >
                     <div className="flex items-center gap-4">
@@ -121,7 +122,7 @@ const About = ({ lang }) => {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 px-6 md:px-20 bg-[#111111]">
+      <section className="pt-20 md:pt-20 px-6 md:px-20 bg-[#111111]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -130,14 +131,14 @@ const About = ({ lang }) => {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="relative z-10 rounded-lg overflow-hidden">
+              <div className="relative z-10 rounded-lg overflow-hidden shadow-2xl">
                 <img
                   src="/images/abel5.jpg"
                   alt="Abel playing Begena"
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <button className="w-20 h-20 rounded-full bg-amber-500 flex items-center justify-center hover:scale-110 transition-transform group">
+                  <button className="w-20 h-20 rounded-full bg-amber-500 flex items-center justify-center hover:scale-110 transition-transform group shadow-glow-lg">
                     <Play
                       size={32}
                       className="text-white ml-1 group-hover:scale-110 transition-transform"
@@ -145,7 +146,7 @@ const About = ({ lang }) => {
                   </button>
                 </div>
               </div>
-              <div className="absolute -bottom-6 -right-6 w-48 h-48 border-2 border-amber-500/30 rounded-lg -z-0" />
+              <div className="absolute -bottom-6 -right-6 w-48 h-48 border-2 border-amber-500/40 rounded-lg -z-0" />
             </motion.div>
 
             <motion.div
@@ -184,7 +185,7 @@ const About = ({ lang }) => {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 px-6 md:px-20 bg-[#0a0a0a]">
+      <section className="pt-20 md:pt-20 px-6 md:px-20 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

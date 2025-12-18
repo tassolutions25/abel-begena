@@ -59,15 +59,14 @@ const Navbar = ({ lang, toggleLang, t }) => {
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
         className={`fixed w-full z-40 top-0 left-0 transition-all duration-500 ${
-          scrolled ? "bg-black/90 backdrop-blur-md py-4" : "bg-transparent py-6"
+          scrolled
+            ? "bg-black/95 backdrop-blur-xl py-4 shadow-2xl"
+            : "bg-transparent py-6"
         }`}
       >
         <div className="container mx-auto px-6 md:px-10 flex justify-between items-center">
-          <Link
-            to="/"
-            className="flex items-center gap-3 group"
-          >
-            <div className="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <Link to="/" className="flex items-center gap-3 group">
+            <div className="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center group-hover:scale-110 group-hover:shadow-glow transition-all duration-300">
               <Music className="text-black" size={20} />
             </div>
             <span className="text-xl font-bold tracking-tight text-white">
@@ -76,7 +75,7 @@ const Navbar = ({ lang, toggleLang, t }) => {
           </Link>
 
           <div className="hidden lg:flex items-center gap-10 text-xs font-semibold tracking-[0.15em] uppercase text-white/80">
-            {navLinks.map((link, i) => (
+            {navLinks.map((link, i) =>
               link.isRoute ? (
                 <Link
                   key={i}
@@ -86,9 +85,13 @@ const Navbar = ({ lang, toggleLang, t }) => {
                   }`}
                 >
                   {link.label}
-                  <span className={`absolute bottom-0 left-0 h-0.5 bg-amber-500 transition-all duration-300 ${
-                    location.pathname === link.to ? "w-full" : "w-0 group-hover:w-full"
-                  }`} />
+                  <span
+                    className={`absolute bottom-0 left-0 h-0.5 bg-amber-500 transition-all duration-300 ${
+                      location.pathname === link.to
+                        ? "w-full"
+                        : "w-0 group-hover:w-full"
+                    }`}
+                  />
                 </Link>
               ) : (
                 <a
@@ -100,20 +103,20 @@ const Navbar = ({ lang, toggleLang, t }) => {
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 group-hover:w-full transition-all duration-300" />
                 </a>
               )
-            ))}
+            )}
           </div>
 
           <div className="flex items-center gap-4">
             <button
               onClick={toggleLang}
-              className="hidden md:flex items-center gap-2 border border-white/20 rounded-full px-4 py-2 text-xs font-bold tracking-wider text-white/80 hover:bg-white hover:text-black transition-all"
+              className="hidden md:flex items-center gap-2 border border-white/20 rounded-full px-4 py-2 text-xs font-bold tracking-wider text-white/80 hover:bg-white hover:text-black hover:shadow-glow transition-all duration-300"
             >
               {lang === "am" ? "EN" : "አማ"}
             </button>
 
             <a
               href="tel:0912674600"
-              className="hidden md:flex items-center gap-2 bg-amber-500 text-black font-bold px-5 py-2.5 rounded-full text-xs tracking-wider hover:bg-amber-400 transition-colors"
+              className="hidden md:flex items-center gap-2 bg-amber-500 text-black font-bold px-5 py-2.5 rounded-full text-xs tracking-wider hover:bg-amber-400 hover:shadow-glow transition-all duration-300"
             >
               <Phone size={14} />
               <span>{lang === "am" ? "ይደውሉ" : "Call Us"}</span>
@@ -178,13 +181,28 @@ const Navbar = ({ lang, toggleLang, t }) => {
                 {lang === "am" ? "Switch to English" : "ወደ አማርኛ ቀይር"}
               </button>
               <div className="flex gap-6">
-                <a href="https://instagram.com/abel_begena" target="_blank" rel="noreferrer" className="text-white/60 hover:text-amber-400 transition-colors">
+                <a
+                  href="https://instagram.com/abel_begena"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white/60 hover:text-amber-400 transition-colors"
+                >
                   <Instagram size={24} />
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-white/60 hover:text-amber-400 transition-colors">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white/60 hover:text-amber-400 transition-colors"
+                >
                   <Facebook size={24} />
                 </a>
-                <a href="https://youtube.com" target="_blank" rel="noreferrer" className="text-white/60 hover:text-amber-400 transition-colors">
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-white/60 hover:text-amber-400 transition-colors"
+                >
                   <Youtube size={24} />
                 </a>
               </div>
@@ -214,7 +232,7 @@ const Footer = ({ t, lang }) => {
   return (
     <footer id="contact" className="bg-[#0a0a0a] relative">
       <div className="border-t border-white/10">
-        <div className="container mx-auto px-6 md:px-20 py-20 md:py-32">
+        <div className="container mx-auto px-6 md:px-20 pt-20 md:pt-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
               <motion.h2
@@ -230,7 +248,7 @@ const Footer = ({ t, lang }) => {
                   href="tel:0912674600"
                   className="group flex items-center gap-4 text-gray-400 hover:text-amber-400 transition-colors"
                 >
-                  <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-amber-500 transition-colors">
+                  <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-amber-500 group-hover:shadow-glow-sm transition-all duration-300">
                     <Phone size={20} />
                   </div>
                   <span className="text-xl">091 267 4600</span>
@@ -268,7 +286,7 @@ const Footer = ({ t, lang }) => {
                     href="https://instagram.com/abel_begena"
                     target="_blank"
                     rel="noreferrer"
-                    className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-amber-500 hover:border-amber-500 hover:text-black transition-all"
+                    className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-amber-500 hover:border-amber-500 hover:text-black hover:shadow-glow transition-all duration-300"
                   >
                     <Instagram size={20} />
                   </a>
@@ -291,10 +309,19 @@ const Footer = ({ t, lang }) => {
                 </div>
 
                 <div className="flex items-start gap-4 text-gray-500">
-                  <MapPin size={20} className="text-amber-500 flex-shrink-0 mt-1" />
+                  <MapPin
+                    size={20}
+                    className="text-amber-500 flex-shrink-0 mt-1"
+                  />
                   <div>
-                    <p className="text-white mb-1">{lang === "am" ? "ዋና ቢሮ" : "Main Office"}</p>
-                    <p>{lang === "am" ? "ፒያሳ፣ አባቢያ ራመት ታቦር ህንጻ 4ተኛ ፎቅ" : "Piassa, Ababiya Ramet Tabor Bldg, 4th Floor"}</p>
+                    <p className="text-white mb-1">
+                      {lang === "am" ? "ዋና ቢሮ" : "Main Office"}
+                    </p>
+                    <p>
+                      {lang === "am"
+                        ? "ፒያሳ፣ አባቢያ ራመት ታቦር ህንጻ 4ተኛ ፎቅ"
+                        : "Piassa, Ababiya Ramet Tabor Bldg, 4th Floor"}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -328,7 +355,7 @@ const Footer = ({ t, lang }) => {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.5 }}
             onClick={scrollToTop}
-            className="fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full bg-amber-500 text-black flex items-center justify-center shadow-lg hover:bg-amber-400 transition-colors"
+            className="fixed bottom-8 right-8 z-50 w-12 h-12 rounded-full bg-amber-500 text-black flex items-center justify-center shadow-glow-lg hover:bg-amber-400 hover:shadow-glow-xl hover:scale-110 transition-all duration-300"
           >
             <ArrowUp size={20} />
           </motion.button>
