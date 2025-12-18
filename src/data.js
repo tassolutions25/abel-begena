@@ -77,7 +77,7 @@ export const content = {
           content: `በገና ድምፀ ማኅዘኒ ነው፡፡ ምክንያቱም በተለይ የኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተክርስቲያን ሊቃውንት አራቅቀው እንደሚተረጉሙት ይህ ምድራዊ ማኅዘኒ ዜማ የመጣው በዮባል ልጆች ኃዘንና እንጉርጉሮ ምክንያት እንደሆነ ይኸው ከላይ የተጠቀሰው ታሪክ ጠቅሰው ያትታሉ፣ ያመሰጥራሉ፡፡ ይኸውም ከላይ እንደተገለጸው፡- ቃየል ወንድሙ አቤልን መግደሉ፤ ቃየል ደግሞ በልጁ በላሜህ መገደሉን፤ እያስታወሱ የዩባል ልጆች የደረቀ እንጨት ጠርበውና አለዝበው፣ ቆዳ ወጥረው፣ ፍቀው፣ አድርቀውና ዳምጠው፣ ጅማት አክርረውና አበግነው... በቃለ ማኅዘኒ፣ በድምፀ ማኅዘኒ... ያንጐራጉሩ ነበር በማለት ሊቃውንቶቻችን ያትታሉ፡፡ በዚህ ታሪካዊ እውነታ ምክንያት ነው "በገና" ቃለ ማኅዘኒ፣ ድምጸ ማኅዘኒ ሆኖ የሐዘን ማለትም የንስሐ፣ የልመናና የምስጋና ማቅረቢያ የዜማ መሣሪያ በመሆን አገልግሎት በመስጠት ላይ የሚገኘው፡፡ የበገና የአጀማመሩ ታሪክ በዩባል ልጆች ሆኖ ይዘቱም ሆነ አይነቱ እየተሻሻለ መጥቶ ዘመናት አልፎ ከትውልድ ትውልድ ሲተካ ማኅበራዊም ሆነ መንፈሳዊ አገልግሎቱ በጥልቀት የታወቀው በመዝሙረኛው(በበገነኛው) በቅዱስ ዳዊት ነው።`,
         },
         {
-          heading: "የበገና አቀራረብ ዘዴዎች",
+          heading: "የበገና አደራደር ዘዴዎች",
           content: `በገና በሁለት መልኩ ሊቀርብ ወይ ሊደረደር ይችላል፡፡
           በእጅና፡
           በድሕንጻ፡- (ድሕንጻ፡- መግረፊያ ሆኖ እጅግ መሳጭና የበለጠ በሚመስጥ መልኩ በገናውን የሚያስጮኽ የበገና ማጫወቻ ነው)
@@ -89,9 +89,9 @@ export const content = {
     },
     skills: [
       { name: "በገና", percentage: 95, description: "የመንፈሳዊ ዜማ መሳሪያ" },
-      { name: "ክራር", percentage: 90, description: "የባህል ዜማ መሳሪያ" },
-      { name: "መሰንቆ", percentage: 85, description: "የወግ ዜማ መሳሪያ" },
-      { name: "ዋሽንት", percentage: 80, description: "የእረኝነት ዜማ መሳሪያ" },
+      { name: "ክራር", percentage: 90, description: "የመንፈሳዊ ዜማ መሳሪያ" },
+      { name: "መሰንቆ", percentage: 85, description: "የመንፈሳዊ ዜማ መሳሪያ" },
+      { name: "ዋሽንት", percentage: 80, description: "የመንፈሳዊ ዜማ መሳሪያ" },
     ],
     whyUs: {
       title: "ለምን እኛን ይምረጡ?",
@@ -160,7 +160,7 @@ export const content = {
         },
         {
           src: "/images/abel48.jpg",
-          title: "የአቤል በና ቤተሰቦች",
+          title: "የአቤል በገና ቤተሰቦች",
           category: "ቤተሰብ",
         },
         { src: "/images/abel37.png", title: "አበው መምህራን", category: "መምህራን" },
@@ -197,10 +197,10 @@ export const content = {
         {
           name: "ዋሽንት",
           category: "መንፈሳዊ",
-          img: "washnt.jpg",
+          img: "/images/washnt.jpg",
           description: "የዋሽንት ትምህርት",
           duration: "3, 6, 9 ወራት",
-          level: "ጀማሪ",
+          level: "ሁሉም ደረጃ",
         },
       ],
     },
@@ -316,6 +316,30 @@ export const content = {
           
           When the strings are plucked, the sound resonates from the bottom, symbolizing the mystery of Incarnation—Divinity and Humanity uniting in the Virgin's womb.`,
         },
+        {
+          heading: "Harp Usage",
+          content: `The harp is used only for spiritual purposes, namely for thanksgiving and supplication. Therefore, it is chosen and used only for inside church service.`,
+        },
+        {
+          heading: "The Origin of the Harp in Ethiopia",
+          content: `The Harp was introduced to Ethiopia before the birth of Christ by the early Ethiopian kings, and it is said that the recent kings, Emperor Menelik and Emperor Tewodros, were playing the Harp. On the other hand,
+        There are two views on the history of the Harp's arrival in our country, Ethiopia.
+        Our country, Ethiopia, is the result of its civilization and the result of its belief in its constitution and mind. (There is also a historical implication that it began here.)
+        It is said that it came from the sacred music and ritual relics, books, etc. that came with the Ark of Zion during the time of Menelik I, and this view is widely interpreted, narrated, and believed by scholars in our country.`,
+        },
+        {
+          heading: "Words of Begena - Words of Repentance",
+          content: `the harp is an instrument with a repentance. Because, as the scholars of the Ethiopian Orthodox Tewahedo Church have interpreted, this earthly musical instrument came about because of the sorrow and lamentation of the sons of Jubal, as mentioned above. That is, as stated above: Cain killed his brother Abel; Cain was killed by his son Lamech; remembering this, the sons of Jubal cut and smoothed dry wood, peeled off its skin, boiled it, dried it and steamed it, stretched it and stretched it... in a musical instrument, in a musical instrument... our scholars write that they used to murmur. It is because of this historical fact that "Begena" is a musical instrument, a musical instrument, and a musical instrument of sorrow, that is, repentance, supplication and thanksgiving. The history of the harp dates back to the sons of Jubal, and as its content and form have improved over the years, and as it has been passed down from generation to generation, its social and spiritual service was deeply recognized by the psalmist (the psalmist) Saint David.`,
+        },
+        {
+          heading: "Harp playing methods",
+          content: `The harp can be presented or arranged in two ways.
+By hand and:
+In the building: - (The building is a harp player who plays the harp in a very captivating and more captivating way)
+"With the spirit of the building, I have sung the harp to my heart
+and my soul has been in my mouth from the middle of the day
+for the first time……) (Book of Hours: Esebhtsegaki)`,
+        },
       ],
     },
     skills: [
@@ -327,17 +351,17 @@ export const content = {
       {
         name: "Krar",
         percentage: 90,
-        description: "Traditional lyre instrument",
+        description: "Sacred spiritual instrument",
       },
       {
         name: "Masinqo",
         percentage: 85,
-        description: "Single-stringed bowed lute",
+        description: "Sacred spiritual instrument",
       },
       {
         name: "Washint",
         percentage: 80,
-        description: "Traditional bamboo flute",
+        description: "Sacred spiritual instrumentኣ",
       },
     ],
     whyUs: {
@@ -346,7 +370,7 @@ export const content = {
         {
           icon: "award",
           title: "Expert Teachers",
-          desc: "Professionals with over 20 years of experience",
+          desc: "Professionals with many years of experience",
         },
         {
           icon: "users",
@@ -356,7 +380,7 @@ export const content = {
         {
           icon: "music",
           title: "Modern Methods",
-          desc: "Teaching traditional music with modern techniques",
+          desc: "Teaching spiritual hymn with easy techniques",
         },
         {
           icon: "certificate",
@@ -376,7 +400,7 @@ export const content = {
         },
         {
           src: "/images/abel5.jpg",
-          title: "Begena Performance",
+          title: "Begena Night",
           category: "Performance",
         },
         {
@@ -396,7 +420,7 @@ export const content = {
         },
         {
           src: "/images/abel35.png",
-          title: "Musical Instruments",
+          title: "Harp Hymns",
           category: "Instruments",
         },
         {
@@ -406,13 +430,13 @@ export const content = {
         },
         {
           src: "/images/abel48.jpg",
-          title: "Teacher and Student",
+          title: "Teachers and Students",
           category: "Education",
         },
         {
           src: "/images/abel23.jpg",
-          title: "Community Gathering",
-          category: "Community",
+          title: "Abel Begena Families",
+          category: "Family",
         },
         {
           src: "/images/abel37.png",
@@ -430,32 +454,32 @@ export const content = {
           category: "Spiritual",
           img: "/images/abel5.jpg",
           description: "Learn the ancient sacred spiritual instrument",
-          duration: "6 Months",
+          duration: "3, 6, 9 Months",
           level: "All Levels",
         },
         {
           name: "Masinqo",
           category: "Traditional",
           img: "/images/abel28.jpg",
-          description: "Traditional single-stringed instrument training",
-          duration: "4 Months",
-          level: "Beginner",
+          description: "Learn the ancient sacred spiritual instrument",
+          duration: "3, 6, 9 Months",
+          level: "All Levels",
         },
         {
           name: "Krar",
           category: "Melody",
           img: "/images/kirar.jpg",
-          description: "Learn the beautiful Ethiopian lyre",
-          duration: "4 Months",
+          description: "Learn the ancient sacred spiritual instrument",
+          duration: "3, 6, 9 Months",
           level: "All Levels",
         },
         {
           name: "Washint",
           category: "Wind",
           img: "washnt.jpg",
-          description: "Traditional bamboo flute instruction",
-          duration: "3 Months",
-          level: "Beginner",
+          description: "Learn the ancient sacred spiritual instrument",
+          duration: "3, 6, 9 Months",
+          level: "All Levels",
         },
       ],
     },
