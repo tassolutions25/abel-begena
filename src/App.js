@@ -66,9 +66,11 @@ const Navbar = ({ lang, toggleLang, t }) => {
       >
         <div className="container mx-auto px-6 md:px-10 flex justify-between items-center">
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center group-hover:scale-110 group-hover:shadow-glow transition-all duration-300">
-              <Music className="text-black" size={20} />
-            </div>
+            <img 
+              src="/images/logo.png" 
+              alt="Abel Begena Logo" 
+              className="w-12 h-12 rounded-full object-cover border-2 border-amber-500/20 group-hover:scale-110 group-hover:border-amber-500 transition-all duration-300"
+            />
             <span className="text-xl font-bold tracking-tight text-white">
               {lang === "am" ? "አቤል" : "ABEL"}
             </span>
@@ -230,121 +232,157 @@ const Footer = ({ t, lang }) => {
   };
 
   return (
-    <footer id="contact" className="bg-[#0a0a0a] relative">
-      <div className="border-t border-white/10">
-        <div className="container mx-auto px-6 md:px-20 pt-20 md:pt-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            <div>
-              <motion.h2
+    <footer id="contact" className="bg-[#0a0a0a] relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-amber-500/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-amber-600/5 rounded-full blur-3xl" />
+      
+      <div className="border-t border-white/10 relative z-10">
+        <div className="container mx-auto px-6 md:px-20 py-20 md:py-32">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20">
+            {/* Left Column - CTA */}
+            <div className="lg:col-span-5">
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight mb-10"
               >
-                {t.footer.talk}
-              </motion.h2>
-              <div className="space-y-6">
-                <a
-                  href="tel:0912674600"
-                  className="group flex items-center gap-4 text-gray-400 hover:text-amber-400 transition-colors"
-                >
-                  <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-amber-500 group-hover:shadow-glow-sm transition-all duration-300">
-                    <Phone size={20} />
-                  </div>
-                  <span className="text-xl">091 267 4600</span>
-                </a>
-                <a
-                  href="mailto:info@abelbegena.com"
-                  className="group flex items-center gap-4 text-gray-400 hover:text-amber-400 transition-colors"
-                >
-                  <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-amber-500 transition-colors">
-                    <Mail size={20} />
-                  </div>
-                  <span className="text-xl">info@abelbegena.com</span>
-                </a>
-                <a
-                  href="https://instagram.com/abel_begena"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-center gap-4 text-gray-400 hover:text-amber-400 transition-colors"
-                >
-                  <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-amber-500 transition-colors">
-                    <Instagram size={20} />
-                  </div>
-                  <span className="text-xl">@abel_begena</span>
-                </a>
-              </div>
+                <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-8 text-shadow">
+                  {t.footer.talk}
+                </h2>
+                <p className="text-gray-400 text-lg mb-12 leading-relaxed">
+                  {lang === "am" 
+                    ? "ለበለጠ መረጃ ያግኙን። ዛሬውኑ ይመዝገቡ እና የባህላዊ ሙዚቃ ጉዞዎን ይጀምሩ።" 
+                    : "Get in touch for more information. Enroll today and start your traditional music journey."}
+                </p>
+              </motion.div>
             </div>
 
-            <div className="flex flex-col justify-between">
-              <div>
-                <h3 className="text-amber-500 font-bold text-xs tracking-[0.3em] uppercase mb-6">
-                  {t.footer.followUs}
+            {/* Middle Column - Contact Info */}
+            <div className="lg:col-span-4">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 }}
+              >
+                <h3 className="text-amber-500 font-bold text-xs tracking-[0.3em] uppercase mb-8">
+                  {lang === "am" ? "ያግኙን" : "Contact Us"}
                 </h3>
-                <div className="flex gap-4 mb-10">
+                <div className="space-y-6">
                   <a
-                    href="https://instagram.com/abel_begena"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-amber-500 hover:border-amber-500 hover:text-black hover:shadow-glow transition-all duration-300"
+                    href="tel:0912674600"
+                    className="group flex items-center gap-4 text-gray-400 hover:text-amber-400 transition-colors"
                   >
-                    <Instagram size={20} />
+                    <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-amber-500 group-hover:shadow-glow-sm transition-all duration-300">
+                      <Phone size={18} />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500 mb-1">{lang === "am" ? "ስልክ" : "Phone"}</p>
+                      <p className="text-base font-semibold">091 267 4600</p>
+                    </div>
                   </a>
                   <a
-                    href="https://facebook.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-amber-500 hover:border-amber-500 hover:text-black transition-all"
+                    href="mailto:info@abelbegena.com"
+                    className="group flex items-center gap-4 text-gray-400 hover:text-amber-400 transition-colors"
                   >
-                    <Facebook size={20} />
+                    <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-amber-500 group-hover:shadow-glow-sm transition-all duration-300">
+                      <Mail size={18} />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500 mb-1">{lang === "am" ? "ኢሜይል" : "Email"}</p>
+                      <p className="text-base font-semibold">info@abelbegena.com</p>
+                    </div>
                   </a>
-                  <a
-                    href="https://youtube.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-amber-500 hover:border-amber-500 hover:text-black transition-all"
-                  >
-                    <Youtube size={20} />
-                  </a>
-                </div>
-
-                <div className="flex items-start gap-4 text-gray-500">
-                  <MapPin
-                    size={20}
-                    className="text-amber-500 flex-shrink-0 mt-1"
-                  />
-                  <div>
-                    <p className="text-white mb-1">
-                      {lang === "am" ? "ዋና ቢሮ" : "Main Office"}
-                    </p>
-                    <p>
-                      {lang === "am"
-                        ? "ፒያሳ፣ አባቢያ ራመት ታቦር ህንጻ 4ተኛ ፎቅ"
-                        : "Piassa, Ababiya Ramet Tabor Bldg, 4th Floor"}
-                    </p>
+                  <div className="flex items-start gap-4 text-gray-400">
+                    <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center">
+                      <MapPin size={18} className="text-amber-500" />
+                    </div>
+                    <div>
+                      <p className="text-xs text-gray-500 mb-1">{lang === "am" ? "ዋና ቢሮ" : "Main Office"}</p>
+                      <p className="text-base font-semibold text-white">
+                        {lang === "am"
+                          ? "ፒያሳ፣ አባቢያ ራመት ታቦር ህንጻ 4ተኛ ፎቅ"
+                          : "Piassa, Ababiya Ramet Tabor Bldg, 4th Floor"}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
+            </div>
 
-              <div className="mt-10 flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center">
-                    <Music className="text-black" size={20} />
+            {/* Right Column - Social & Logo */}
+            <div className="lg:col-span-3">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.2 }}
+                className="flex flex-col h-full justify-between"
+              >
+                <div>
+                  <h3 className="text-amber-500 font-bold text-xs tracking-[0.3em] uppercase mb-8">
+                    {t.footer.followUs}
+                  </h3>
+                  <div className="flex gap-3 mb-12">
+                    <a
+                      href="https://instagram.com/abel_begena"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-amber-500 hover:border-amber-500 hover:text-black hover:shadow-glow hover:scale-110 transition-all duration-300"
+                    >
+                      <Instagram size={20} />
+                    </a>
+                    <a
+                      href="https://facebook.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-amber-500 hover:border-amber-500 hover:text-black hover:shadow-glow hover:scale-110 transition-all duration-300"
+                    >
+                      <Facebook size={20} />
+                    </a>
+                    <a
+                      href="https://youtube.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-amber-500 hover:border-amber-500 hover:text-black hover:shadow-glow hover:scale-110 transition-all duration-300"
+                    >
+                      <Youtube size={20} />
+                    </a>
                   </div>
-                  <span className="text-white font-bold">
-                    {lang === "am" ? "አቤል በገና" : "Abel Begena"}
-                  </span>
                 </div>
-              </div>
+
+                <div className="mt-auto">
+                  <Link to="/" className="flex items-center gap-3 group mb-4">
+                    <img 
+                      src="/images/logo.png" 
+                      alt="Abel Begena Logo" 
+                      className="w-14 h-14 rounded-full object-cover border-2 border-amber-500/30 group-hover:scale-110 group-hover:border-amber-500 group-hover:shadow-glow transition-all duration-300"
+                    />
+                    <span className="font-serif text-2xl font-bold text-white">
+                      {lang === "am" ? "አቤል በገና" : "Abel Begena"}
+                    </span>
+                  </Link>
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    {lang === "am" 
+                      ? "የባህላዊ ሙዚቃ ትምህርት ማዕከል" 
+                      : "Traditional Music Education Center"}
+                  </p>
+                </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-white/10 py-8 px-6 md:px-20">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600 font-semibold tracking-widest uppercase">
-          <p>&copy; {new Date().getFullYear()} Abel Begena School.</p>
-          <p>{t.footer.rights}</p>
+      {/* Bottom Bar */}
+      <div className="border-t border-white/10 py-6 px-6 md:px-20 relative z-10">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 font-medium">
+          <p>&copy; {new Date().getFullYear()} Abel Begena Music School. {t.footer.rights}</p>
+          <div className="flex items-center gap-6">
+            <a href="#" className="hover:text-amber-400 transition-colors">{lang === "am" ? "የግላዊነት ፖሊሲ" : "Privacy Policy"}</a>
+            <a href="#" className="hover:text-amber-400 transition-colors">{lang === "am" ? "የአገልግሎት ውል" : "Terms of Service"}</a>
+          </div>
         </div>
       </div>
 

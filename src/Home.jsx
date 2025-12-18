@@ -160,7 +160,7 @@ const Home = ({ lang }) => {
               <div className="h-px w-16 bg-gradient-to-l from-transparent via-amber-500 to-transparent" />
             </div>
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-white">
-              {lang === "am" ? "ልዩ ባህሪያት" : "Our Features"}
+              {lang === "am" ? "ልዩ የሚያደርገን" : "Our Features"}
             </h2>
           </motion.div>
 
